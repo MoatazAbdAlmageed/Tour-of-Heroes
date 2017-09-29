@@ -17,12 +17,7 @@
       </ol>
     </div>
     <div class="col-xs-6">
-
-      <div *ngIf="selectedHero">
-        <h2><b>{{selectedHero.firstName}} </b>details!</h2>
-        <input [(ngModel)]="selectedHero.firstName" class="form-control" placeholder="name"/>
-      </div>
-
+      <hero-detail [selectedHero]="selectedHero"></hero-detail>
     </div>
 
   </div>

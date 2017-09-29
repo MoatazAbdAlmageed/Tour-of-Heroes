@@ -1,0 +1,4 @@
+<div *ngIf="selectedHero">
+  <h2><b>{{selectedHero.firstName}} </b>details!</h2>
+  <input [(ngModel)]="selectedHero.firstName" class="form-control" placeholder="name"/>
+</div>
