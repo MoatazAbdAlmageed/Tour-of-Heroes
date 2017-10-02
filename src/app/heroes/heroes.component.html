@@ -1,10 +1,15 @@
-<ol class="heroes">
-  <li *ngFor="let hero of heroes" [ngClass]="{'selected-hero': hero == selectedHero}" (click)="onSelect(hero)">
-    <span class="badge">{{hero.id}}</span> <label>{{hero.firstName}} {{hero.lastName}}</label>
-  </li>
+<div class="row">
+
+  <div class="col-md-3">
+    <ol class="heroes">
+      <li *ngFor="let hero of heroes" [ngClass]="{'selected-hero': hero == selectedHero}" (mousemove)="onSelect(hero)">
+        <span class="badge">{{hero.id}}</span> <label>{{hero.firstName}} {{hero.lastName}}</label>
+      </li>
+    </ol>
+  </div>
+  <div class="col-md-9">
+    <hero-detail [selectedHero]="selectedHero"></hero-detail>
+  </div>
 
 
-
-</ol>
-
-<hero-detail [selectedHero]="selectedHero"></hero-detail>
+</div>
