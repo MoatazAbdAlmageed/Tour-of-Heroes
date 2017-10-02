@@ -10,7 +10,7 @@ import { HeroService } from './hero.service';
   providers: [HeroService]
 })
 export class HeroesComponent  implements OnInit {
-  title = 'Tour of Heroes';
+
   heroes: Hero[];
   selectedHero: Hero;
   constructor(private heroService: HeroService) {}
