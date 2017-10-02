@@ -3,4 +3,6 @@ export class Hero {
   firstName: string;
   lastName: string;
   email: string;
+  imageurl: string;
+
 }

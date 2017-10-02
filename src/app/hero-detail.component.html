@@ -1,4 +1,22 @@
 <div *ngIf="selectedHero">
-  <h2><b>{{selectedHero.firstName}} </b>details!</h2>
-  <input [(ngModel)]="selectedHero.firstName" class="form-control" placeholder="name"/>
+  <!--<h2><b>{{selectedHero.firstName}} </b>details!</h2>-->
+  <!--<input [(ngModel)]="selectedHero.firstName" class="form-control" placeholder="name"/>-->
+
+  <img  [src]="selectedHero.imageurl" alt="">
+  <table class="table table-striped table-hover">
+  	<thead>
+  		<tr>
+  			<th>FisrtName</th>
+  			<th>Last Name </th>
+  			<th>Email </th>
+  		</tr>
+  	</thead>
+  	<tbody>
+  		<tr>
+  			<td>{{selectedHero.firstName}}</td>
+  			<td>{{selectedHero.lastName}}</td>
+  			<td>{{selectedHero.email}}</td>
+  		</tr>
+  	</tbody>
+  </table>
 </div>

@@ -1,0 +1,68 @@
+
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+  padding: 8px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+  text-align: left;
+}
+
+.selected {
+  background-color: #CFD8DC !important;
+  color: white;
+}
+
+.heroes {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 15em;
+}
+
+.heroes li {
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  background-color: #EEE;
+  margin: .5em;
+  padding: .3em 0;
+  height: 1.6em;
+  border-radius: 4px;
+}
+
+/*.heroes li.selected:hover {*/
+/*background-color: #BBD8DC !important;*/
+/*color: white;*/
+/*}*/
+
+/*.heroes li:hover {*/
+/*color: #607D8B;*/
+/*background-color: #DDD;*/
+/*left: .1em;*/
+/*}*/
+
+.heroes .badge {
+  color: white;
+  background-color: #607D8B;
+  border-radius: 4px 0 0 4px;
+  margin-top: -10px;
+  padding: 5px;
+}
+
+.selected-hero {
+
+  border: 1px solid #607D8B;;
+}
+
+.container img {
+  height: 300px;
+  margin: 0 auto;
+  display: block;
+}
+
+label {
+
+  margin-top: -24px;
+  display: block;
+  margin-left: 22px;
+}

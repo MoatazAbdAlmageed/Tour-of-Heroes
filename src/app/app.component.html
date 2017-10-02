@@ -1,27 +1,2 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div class="container">
-  <img src="../assets/943heroes.png" alt="">
-  <div class="text-center"><h1> Welcome to <i><b>{{title}}</b></i></h1>
 
-  </div>
-
-
-  <div class="row">
-    <div class="col-xs-6">
-
-      <h2>My Heroes</h2>
-
-      <ol class="heroes">
-        <li *ngFor="let hero of heroes" [ngClass]="{'selected-hero': hero == selectedHero}" (click)="onSelect(hero)">
-          <span class="badge">{{hero.id}}</span> <label>{{hero.firstName}} {{hero.lastName}}</label>
-        </li>
-      </ol>
-    </div>
-    <div class="col-xs-6">
-      <hero-detail [selectedHero]="selectedHero"></hero-detail>
-    </div>
-
-  </div>
-
-
-</div>
+<app-heroes></app-heroes>
